@@ -1,0 +1,149 @@
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (branch_1)
+$ git checkout -b nhanh_4
+Switched to a new branch 'nhanh_4'
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (nhanh_4)
+$ ls
+ DHKL18A1HN/     caulenh.txt    new_folder/        text_branch2.txt   text_branch4.txt
+'cau lenh.txt'   main_folder/   text_branch1.txt   text_branch3.txt   text_branch5.txt
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (nhanh_4)
+$ echo " sua file" > file_nhanh1.txt
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (nhanh_4)
+$ git add .
+warning: adding embedded git repository: DHKL18A1HN
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> DHKL18A1HN
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached DHKL18A1HN
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (nhanh_4)
+$ git commit -m "sua doi file"
+[nhanh_4 08304ab] sua doi file
+ 2 files changed, 2 insertions(+)
+ create mode 160000 DHKL18A1HN
+ create mode 100644 file_nhanh1.txt
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 354 bytes | 177.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/buiyen06/24174600006_BUI_THI_YEN_18A1/pull/new/nhanh_4
+remote:
+To https://github.com/buiyen06/24174600006_BUI_THI_YEN_18A1.git
+ * [new branch]      nhanh_4 -> nhanh_4
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (nhanh_4)
+$ git checkout main
+M       DHKL18A1HN
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -d nhanh_4
+error: the branch 'nhanh_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -d nhanh_4
+error: the branch 'nhanh_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -l
+  branch_1
+  branch_5
+* main
+  nhanh_4
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -D nhanh_1
+error: branch 'nhanh_1' not found
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -D branch_1
+Deleted branch branch_1 (was e2fe00b).
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -D branch_5
+Deleted branch branch_5 (was c15b329).
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was 08304ab).
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git add .
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git commit -m "xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   DHKL18A1HN (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git push origin
+Everything up-to-date
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git fetch
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git pull
+Already up to date.
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git push origin
+Everything up-to-date
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git branch -l
+* main
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git add .
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$ git commit -m "xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   DHKL18A1HN (untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Bùi Yến@MSI MINGW64 /d/24174600006_BUITHIYEN_18A1 (main)
+$
